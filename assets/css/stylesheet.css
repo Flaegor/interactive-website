@@ -6,12 +6,14 @@ header{
     font-family: monospace;
     /* display: inline-block; */
     /* vertical-align: middle; */
-    font-size: 32px;
-    background-image: url(../house-images/churchill-house-2.jpg);
+    font-size: 50px;
+    /* background-image: url(../house-images/churchill-house-2.jpg); */
+    background-color: rgb(104, 104, 104);
     position: sticky;
     top: 0;
-    max-height: 75px;
+    max-height: 80px;
     width: 100%;
+    color: white;
 }
 
 header .wrapper,
@@ -22,11 +24,13 @@ main.wrapper {
 
 h1{
     padding: 15px;
+    text-align: center;
 }
 h2, h3{
     background-color: #979797;
-    color: pink;
-    font-size: 26px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
     font-family: monospace;
 }
 
@@ -91,6 +95,11 @@ p{
     margin: 50px 0 10px 25px;
 }
 
+/* FORMAT THE ICON */
+.icon{
+    max-width: 50px;
+}
+
 /* FORMAT THE PAGE GRID */
 .grid{
     display: grid;
@@ -98,7 +107,7 @@ p{
 }
 .grid img{
     max-width: 100%;
-    grid-column: 1/3;
+    /* grid-column: 1/3; */
 }
 #grid-visualisation{
     display: grid;
