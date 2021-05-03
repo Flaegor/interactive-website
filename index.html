@@ -13,11 +13,7 @@
     </head>
     <body>
         <header>
-        <div class="wrapper">
-            <h1 id="title">
-                <img title="churchillicon" class="icon" src="assets/house-images/churchill-house-10.jpg">
-                Churchill House
-            </h1>
+            <div class="wrapper">
                 <!-- <nav> original header
                     <ul>
                         <li><a href="#introduction">Introduction</a></li>
@@ -35,22 +31,41 @@
                     <div id="menuitems">
                         <a href="#introduction">Introduction</a>
                         <a href="#description">Description</a>
+                        <a href="#imagegallery">Image Gallery</a>
                         <a href="#robin-boyd">Robin Boyd</a>
-                        <a href="#statement-of-significance">Statement of Significance</a>
+                        <a href="#statement-of-significance">Significance</a>
                         <a href="#history">History</a>
                     </div>
                 </nav>
             </div>
         </header>
+        <herointro>
+            <div class="wrapper gridhero">
+                <div>
+                    <h1>Churchill House</h1>
+                    <p>
+                        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+                    </p>
+                </div>
+                <div>
+                    <h1 id="title" class="imageparent">
+                    <img class="imagechild1" title="churchillhero" src="assets/house-images/churchill-house-10.jpg">
+                    <img class="imagechild2" title="whitegradient" src="assets/house-images/white-gradient.png">
+                    </h1>
+                </div>
+            </div>
+        </herointro>
 
         <main class="wrapper">
             <section id="introduction">
-                <h2>Introduction</h2>
-                <div><a href="#title">Back to Top</a></div>
+                <h2>Introduction                
+                    <div class="backtotop"><a href="#title">Back to Top</a></div>
+                </h2>
 
-                <!-- Introduction Paragraph Formatting -->
-                <div class="grid">
-                    <img class="intropic hover-border" title="Introductory Picture" alt="churchillhousefront" src="assets/house-images/churchill-house-31.jpg">
+
+                <!-- Introduction Paragraph Formatting | WAS <div class="grid"> | --> 
+                <div>
+                    <img class="intropic hover-border standardpic" title="Introductory Picture" alt="churchillhousefront" src="assets/house-images/churchill-house-31.jpg">
 
                     <!-- Introduction Paragraph Start -->
                     <p>
@@ -69,23 +84,11 @@
                 </div>
             </section>
 
-            <!-- placeholder section for flexgallery -->
             <section>
-                <h2>Main Building</h2>
-                    <ul class="flex-gallery">
-                        <li><img src="assets/house-images/churchill-house-10.jpg"></li>
-                        <li><img src="assets/house-images/churchill-house-11.jpg"></li>
-                        <li><img src="assets/house-images/churchill-house-12.jpg"></li>
-                        <li><img src="assets/house-images/churchill-house-13.jpg"></li>
-                    </ul>
-            </section>
+                <h2 id="description">Description
+                    <div class="backtotop"><a href="#title">Back to Top</a></div>
+                </h2>
 
-            <section>
-                <h2 id="description">Description</h2>
-                <div><a href="#title">Back to Top</a></div>
-                <div class="description-hero-image">
-                    <img title="House Plan" alt="Churchill House Plan Document" src="assets/house-images/churchill-house-1.jpg">
-                </div>
                 <!-- description paragraphs -->
                 <p>
                     Churchill House was designed by Robin Boyd for the Winston Churchill Memorial Trust of Australia in 1969-70 and construction was completed in 1971. The building is an example of the Late Twentieth-Century Brutalist Style (1960-) with its large areas of blank wall and off-form concrete.
@@ -127,6 +130,9 @@
                     Churchill House has a number of landscape/garden areas. At the front (west) of the building is an open lawn area and either side are mixed native/exotic plantings. The pool area contains numerous trees and shrubs, again of mixed native/exotic species. A small courtyard to the southeast of the main building features bamboo.
                 </p>
 
+                <div class="description-hero-image">
+                    <img title="House Plan" alt="Churchill House Plan Document" src="assets/house-images/churchill-house-1.jpg">
+                </div>
                 <h3>Stylistic Analysis</h3>
                 <p>
                     Churchill House displays several key features of the Late Twentieth Century Brutalist style as follows:
@@ -151,10 +157,26 @@
                 </p>
             </section>
 
+            <!-- placeholder section for flexgallery -->
+            <section id="imagegallery">
+                <h2>Image Gallery
+                    <div class="backtotop"><a href="#title">Back to Top</a></div>
+                </h2>
+                    <ul class="flex-gallery">
+                        <li><img src="assets/house-images/churchill-house-10.jpg"></li>
+                        <li><img src="assets/house-images/churchill-house-11.jpg"></li>
+                        <li><img src="assets/house-images/churchill-house-12.jpg"></li>
+                        <li><img src="assets/house-images/churchill-house-13.jpg"></li>
+                        <li><img src="assets/house-images/churchill-house-14.jpg"></li>
+                        <li><img src="assets/house-images/churchill-house-15.jpg"></li>
+                    </ul>
+            </section>
+
             <!-- robin boyd section -->
             <section>
-                <h2 id="robin-boyd">Robin Boyd</h2>
-                <div><a href="#title">Back to Top</a></div>
+                <h2 id="robin-boyd">Robin Boyd
+                    <div class="backtotop"><a href="#title">Back to Top</a></div>
+                </h2>
                 <div><img title="Boyd Portrait" alt="Boyd Portrait" src="assets/house-images/extra2-robin%20boyd%20portrait-copyright-Mark-Strizic.jpg"></div>
                 <p>
                     Robin Gerard Penleigh Boyd (1919-1971) was a nationally and internationally renowned architect. He was also widely published and appreciated as an architectural critic. In 1953 Robin Boyd, Roy Grounds and Frederick Romberg formed the practice of Grounds, Romberg and Boyd which became a leading architectural firm in Melbourne. The firm also practiced extensively in Canberra.
@@ -199,8 +221,9 @@
 
             <!-- statement of significance section -->
             <section>
-                <h2 id="statement-of-significance">Statement of Significance</h2>
-                <div><a href="#title">Back to Top</a></div>
+                <h2 id="statement-of-significance">Statement of Significance
+                    <div class="backtotop"><a href="#title">Back to Top</a></div>
+                </h2>
                 <p>
                     Churchill House is a good example of the Late Twentieth Century Brutalist style, (1960-), displaying several key features as follows:
                     <ul>
@@ -221,9 +244,9 @@
 
             <!-- history section -->
             <section>
-                <h2 id="history">History</h2>
-                <div><a href="#title">Back to Top</a></div>
-
+                <h2 id="history">History
+                    <div class="backtotop"><a href="#title">Back to Top</a></div>
+                </h2>
                 <p>
                     Churchill House was built by the Winston Churchill Memorial Trust of Australia. The Trust began consideration of erecting a building of its own in 1967 and formed a building committee in 1968. In 1969 it acquired a lease for land on Northbourne Avenue, the current site, and engaged the architect Robin Boyd to design the building.
                 </p>
