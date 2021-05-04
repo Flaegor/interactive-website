@@ -4,20 +4,17 @@
 *{
     box-sizing: border-box;
 }
+
 /* FORMAT THE HEADERS */
 header{
     font-family: monospace;
-    /* display: inline-block; */
-    /* vertical-align: middle; */
     font-size: 50px;
-    /* background-image: url(../house-images/churchill-house-2.jpg); */
     background-color: rgb(104, 104, 104);
     position: sticky;
     top: 0;
     max-height: 80px;
     width: 100%;
     color: white;
-
 }
 
 header .wrapper,
@@ -57,77 +54,6 @@ h3{
     max-width: 900px;
     border-radius: 15px;
 }
-
-section{
-    /* PADDING TOP HERE MATCH HEADER HEIGHT FOR NAV LINKS */
-    padding-top: 80px;
-}
-
-.backtotop{
-    font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/* FORMAT THE PAGE NAVIGATION */
-/* nav{
-    background-color: #c9c9c9;
-    display: inline-block;
-} */
-
-#burgernav {
-    width: 80%;
-    background: rgb(85, 85, 85);
-    /* position: sticky; */
-    top: 0;
-    float: right;
-    height: 80px;
-    border-radius: 0 15px 15px 0;
-}
-/* Hiding Burger? */
-#burgernav label, #burger { display: none; }
-/* Menu Formatting */
-#menuitems { 
-    display: flex; 
-    justify-content: flex-end;
-    margin-right: 40px;
-    flex-wrap: wrap;
-}
-#menuitems a {
-    width: 12%;
-    padding: 20px;
-    color: black;
-    text-align: center;
-    font-size: 16px;
-    text-decoration: none;
-    background-color: white;
-    margin: 5px;
-    border-radius: 5px;
-    }
-#menuitems a:hover {
-    background: #adadad;
-}
-
-/* Make Responsive for Small Screens */
-@media screen and (max-device-width: 760px), (max-width: 760px) {
-    #burgernav label {
-        display: inline-block;
-        color: white;
-        background: #927170;
-        font-size: 16px;
-        padding: 10px;
-    }
-    /* SPLIT MENU ITEMS VERTICALLY */
-    #menuitems a {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        border-top: 1px solid #333;
-        }
-    /* toggle show/hide menu */
-    #menuitems { display: none; }
-    #burgernav input:checked ~ #menuitems {display: block; }
-}
-
 /* FORMAT THE PARAGRAPHS */
 p{
     font-family: 'Gill Sans', sans-serif;
@@ -140,7 +66,29 @@ p{
     border-left: 1px solid #000;
     margin: 20px 0px 10px 0px;
 }
+.standardpic{
+    max-width: 50%;
+    /* padding: 15px 15px 15px 0; */
+    margin-left: 50px;
+    margin-bottom: 16px;
+    float: right;
+}
 
+
+section{
+    /* PADDING TOP HERE MATCH HEADER HEIGHT FOR NAV LINKS */
+    padding-top: 80px;
+}
+herointro{
+    padding-top: 80px;
+}
+.backtotop{
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* ------------------------------------------------------NAVIGATION--------------------------------------------------------------- */
 /* FORMAT THE ICON */
 .iconholder {
     width: 20%;
@@ -156,25 +104,52 @@ p{
     /* position: absolute;
     left: 50px; */
 }
-
-
-.standardpic{
-    max-width: 100%;
-    padding: 15px 15px 15px 0;
+#burgernav {
+    width: 80%;
+    background: rgb(85, 85, 85);
+    /* position: sticky; */
+    top: 0;
+    float: right;
+    height: 80px;
+    border-radius: 0 15px 15px 0;
 }
-/* FORMAT THE PAGE GRID */
+/* Hiding Burger */
+#burgernav label, #burger { 
+    display: none;
+    float: right;
+}
+/* Menu Formatting */
+#menuitems { 
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 40px;
+    flex-wrap: wrap;
+}
+#menuitems a {
+    width: 12%;
+    padding: 15px;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+    }
+#menuitems a:hover {
+    background: #adadad;
+}
 
 
+
+
+/* ------------------------------------------------------GRIDS--------------------------------------------------------------- */
 .gridhero{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 900px;
     justify-content: center;
     vertical-align: baseline;
-    /* align-content: center;
-    gap: 4px;
-    grid-auto-flow: column; */
-
 }
 .imageparent {
     position: relative;
@@ -182,42 +157,38 @@ p{
     left: 0;
     z-index: -50;
 }
-
 .imagechild1 {
     position: relative;
     top: 0;
     left: 0;
     border: 1px solid #000000;
 }
-
 .imagechild2 {
     position: absolute;
     top: 0px;
     left: 0px; 
-    /* max-height: 300px; */
     width: max-content;
     height: 100%;
-
 }
 
-.description-hero-image img{
+/* .description-hero-image img{
     max-width: 100%;
 }
 
 .gridhero img{
     max-width: 100%;
  
-    /* grid-column: 1/3; */
-}
+
+} */
 
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.grid img{
+/* .grid img{
     max-width: 100%;
-    /* grid-column: 1/3; */
-}
+
+} */
 
 
 /* FORMAT FLEX GALLERY */
@@ -250,9 +221,21 @@ p{
 
 /* MEDIA QUIRIES */
 
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-device-width: 1200px), (max-width:1200px) {
+    .wrapper{
+        max-width: 900px !important;
+    }
+    h1, h2 {
+        max-width: 900px;
+    }
+    h3 {
+        max-width: 600px;
+    }
     .grid{
         grid-template-columns: 1fr 1fr;
+    }
+    .flex-gallery{
+        max-width: 900px;
     }
     .flex-gallery > li{
         width: 40%;
@@ -261,10 +244,14 @@ p{
         display: initial;
     }
     .gridhero img{
-        width:80%;
+        max-width:80%;
         margin-left: auto;
         margin-right: auto;
         display: block;
+        /* max-width: 900px; */
+    }
+    .gridhero h1{
+        margin: auto;
     }
     .gridhero p{
         text-align: center;
@@ -275,8 +262,61 @@ p{
     img.imagechild2{
         display: none;
     }
+    #menuitems a {
+        width: 15%;
+        padding: 10px;
+    }
+    .iconholder{
+        max-height: 60px;
+    }
+    #burgernav{
+        max-height: 60px;
+    }
 }
 
+/* Make Responsive for Small Screens */
+@media screen and (max-device-width: 700px), (max-width: 700px) {
+    #burgernav label {
+        display: inline-block;
+        color: white;
+        background: #927170;
+        font-size: 60px;
+        padding: 10px;
+    }
+    /* SPLIT MENU ITEMS VERTICALLY */
+    #menuitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 200px;
+        float: right;
+        border-top: 1px solid #333;
+        }
+    #menuitems a:hover {
+        border:3px solid #000;
+    }
+   
+    /* toggle show/hide menu */
+    #menuitems {
+        display: none; 
+        height: 380px;
+        width: 210px;
+        background-color: rgb(168, 168, 168);
+        float: right;
+        margin-right: 10px;
+    }
+    #burgernav input:checked ~ #menuitems {
+        display: block;
+    }
+    /* #menuitems a input:checked ~ #menuitems {
+        display: none;
+    } */
+
+    /* switch standardimage to be in line */
+    .standardpic{
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+}
 @media screen and (max-device-width: 600px) {
     .grid{
         display: initial;
@@ -286,3 +326,5 @@ p{
         width: 40%;
     }
 }
+
+
